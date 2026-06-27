@@ -258,4 +258,25 @@ def main():
     )
 
     print(
-        "P
+        "Process finished"
+    )
+
+
+if __name__ == "__main__":
+
+    try:
+        main()
+
+    except KeyboardInterrupt:
+        print(
+            "Stopped"
+        )
+
+    except Exception as error:
+        print(
+            "Error:",
+            error
+        )
+
+print("Session closed")
+```
